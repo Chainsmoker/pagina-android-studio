@@ -536,10 +536,6 @@ hr {
         display: none;
     }
 
-    .inicio-descargar-opciones-contenedor {
-        background-color: red;
-    }
-
     .inicio-descargar-opciones {
         border: 2px solid #133A4B;
         margin: 10px 60px;
