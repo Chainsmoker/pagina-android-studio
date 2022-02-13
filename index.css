@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+.navbar {
+    grid-column: 1 / -1;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.171);
+    overflow: hidden;
+}
+
+.logo {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 70%;
+}
+
+.logo button {
+    background: none;
+    border: none;
+    display: none;
+}
+
+.logo button i{
+    font-size: 1.7rem;
+}
+
+.navbar-enlaces {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar-enlaces li {
+    list-style: none;
+}
+
+.navbar-enlaces li a {
+    text-decoration: none;
+    color:#777A7F;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 17px 0;
+}
+
+/* Navbar hover */
+.navbar-enlaces li a:hover {
+    border-bottom: 3px solid rgba(0, 0, 0, 0.39);
+}
+
+.navbar-otros {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: width .2s;
+}
+
+.navbar-otros .navbar-otros-input {
+    height: 100%;
+    padding: 6px 0;
+}
+
+.navbar-otros .navbar-otros-input input {
+    height: 80%;
+    background-color: #F1F3F4;
+    border: none;
+    outline: none;
+    padding-left: 40px;
+}
+
+.navbar-otros .navbar-otros-input i {
+    position: absolute;
+    top: 17px;
+    margin-left: 10px;
+}
+
+/* Navbar focus */
+.dpnone {
+    display: none;
+}
+
+.navbar-otros-efecto {
+    width: 100%;
+    transition: width .2s;
+}
+
+.navbar-otros-input-efecto{
+    width: 60%;
+}
+
+.navbar-otros-input-efecto input {
+    width: 100%;
+}
+
+.navbar-otros .navbar-otros-input input::placeholder {
+    font-size: 1rem;
+}
+
+/**/
+
+
+.navbar-otros button {
+    width: 150px;
+    height: 65%;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.navbar-otros button i {
+    margin: 0 15px;
+}
+
+.navbar-otros a {
+    color: #2571E2;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* SUB MENU */
+.sub-menu {
+    background-color: #F8F9FA;
+    height: 120px;
+    display: flex;
+    justify-content: space-evenly; 
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.sub-menu h1 {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.sub-menu-enlaces a {
+    color: #72757A;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 20px;
+    padding: 0 0 20px 0;
+}
+
+.sub-menu-enlaces a:hover {
+    border-bottom: 3px solid rgba(0, 0, 0, 0.39);
+}
+
+
+/* INICIO */
+
+/* BOTONES */
+.inicio-botones {
+    padding: 15px 40px;
+    color: black;
+    text-decoration: none;
+    font-weight:  500;
+    letter-spacing: 1px;
+    border-radius:50px;
+    margin-bottom: 10px;
+}
+
+.inicio-descargar {
+    display: inline-block;
+    background-color: #3DDC84;
+}
+
+.inicio-descargar-opciones {
+    border: 2px solid #133A4B;
+    margin: 10px 60px;
+    padding: 15px 100px;
+}
+
+.boton-hover:hover {
+    background-color: #133A4B;
+    color: white;
+    transition: background .3s;
+}
+
+
+.inicio {
+   text-align: center;
+   width: 90%;
+   height: calc(100vh - 180px);
+   margin: 0 auto;
+}
+
+.inicio-android-img {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.inicio h2 {
+    font-weight: 400;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.658);
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.767);
+    margin-bottom: 50px;
+}
+
+.inicio-descargar-opciones-contenedor {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Inicio imagen */
+.inicio-imagen {
+    height: 100vh;
+    width: 90%;
+    margin: 100px auto;
+}
+
+.inicio-imagen img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ANDROID STUDIO COMPONENTES */
+
+.android-studio-componentes-feature {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.android-studio-componentes-titulo {
+    font-size: 2.5rem;
+    margin: 50px 0 20px ;
+}
+
+.android-studio-componentes-parrafo {
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.719);
+}
+
+
+.android-studio-componentes {
+    width: 90%;
+    margin: 0 auto 50px auto;
+}
+
+.android-studio-componentes-contenedor {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    background-color: #e4e4e43f;
+    border: 1px solid rgba(255, 255, 255, 0.096);
+    padding: 20px;
+}
+
+.android-studio-componentes-contenedor-componente-izquierda {
+    grid-column: 1 / 6;
+    height: 100%;
+    padding: 20px;
+}
+
+.android-studio-componentes-contenedor-componente-izquierda a {
+    display: inline-block;
+    margin-top: 90px;
+    border: 2px solid #133A4B;
+}
+
+.android-studio-componentes-contenedor-componente-derecha {
+    grid-column: 6 / -1;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+}
+
+.android-studio-componentes-contenedor-componente-derecha video {
+    width: 100%;
+    height: 100%;
+}
+
+/* SECCION APK ANALYZER Y FAST EMULATOR */
+
+.android-studio-componentes-contenedor-otro-diseno-titulo {
+    margin: 10px 0;
+}
+
+.android-studio-componentes-contenedor-otro-diseno-parrafo {
+    margin-bottom: 20px;
+}
+
+.android-studio-componentes-contenedor-otro-diseno-boton {
+    display: inline-block;
+    margin-top: 80px;
+    border: 2px solid #133A4B;
+    margin: 10px;
+}
+
+.android-studio-componentes-contenedor-otro-diseno {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    border: 1px solid rgba(255, 255, 255, 0.096);
+    padding: 20px;
+    gap: 20px;
+}
+
+.android-studio-componentes-contenedor-otro-diseno-izquierda {
+    grid-column: 1 / 8;
+    background-color: #e4e4e43f;
+    padding: 10px 20px;
+}
+
+.android-studio-componentes-contenedor-otro-diseno-izquierda {
+    grid-column: 1 / 8;
+    background-color: #e4e4e43f;
+    padding: 10px 20px;
+}
+
+.android-studio-componentes-contenedor-otro-diseno-izquierda img {
+    width: 100%;
+}
+
+.android-studio-componentes-contenedor-otro-diseno-derecha {
+    padding: 10px 20px;
+    grid-column: 8 / -1;
+    background-color: #e4e4e43f;
+}
+
+.fast-emulator-video {
+    display: flex;
+    height: 500px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.fast-emulator video {
+    height: 100%;
+    width: 60%;
+}
+
+
+/* COMO LAS SECCIONES FLEXIBLE BUILD SYSTEM/REALTIME PROFILERS SON IGUALES A LAS SECCIONES APK ANALYZER Y FAST EMULATOR, REUTILIZAREMOS LAS MISMAS CLASES, AÑADIENDO OTRA PARA CAMBIAR LA POSICION */
+.android-studio-componentes-contenedor-otro-diseno-izquierda-cambio-de-posicion {
+    grid-column: 1 / 6;
+}
+
+.android-studio-componentes-contenedor-otro-diseno-derecha-cambio-de-posicion {
+    grid-column: 6 / -1;
+}
+
+.android-studio-componentes-contenedor-otro-diseno-cambio-de-posicion-video{
+    margin: 0 auto;
+}
+
+.android-studio-componentes-contenedor-otro-diseno-cambio-de-posicion-video video {
+    width: 100%;
+}
+
+/* FINAL DE LAS SECCIONES */
+hr {
+    margin-top: 60px;
+}
+
+/* SECCION CURSOS */
+.android-cursos {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.android-curso h2 {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 0.63);
+    margin: 20px 0;
+}
+
+
+.android-curso h1 {
+    font-size: 2rem;
+    line-height: 36px;
+}
+
+.android-curso h1 a {
+    text-decoration: none;
+    color: #073042;
+}
+
+.android-curso h1 a:hover {
+    color: rgb(0, 72, 206);
+}
+
+.android-cursos h3 {
+    color: #073042;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.curso-imagen img{
+    width: 100%;
+    height: 240px;
+}
+
+
+/* RESPONSIVE */
+@media  (max-width: 1077px) {
+
+    .navbar-enlaces {
+        width: 40%;
+    }
+
+    .navbar-enlaces li a {
+        font-size: 12px;
+    }
+
+    .navbar-otros {
+       flex-grow: 1;
+    }
+}
+
+@media (max-width: 1002px) {
+    .navbar-otros-input {
+        width: 30%;
+    }
+
+    .navbar-otros-input-item {
+        width: 100%;
+    }
+
+    .navbar-otros button {
+        width: 20%;
+    }
+
+    .android-studio-componentes-contenedor-otro-diseno-izquierda {
+        grid-column: 1 / 7;
+    }
+
+    .android-studio-componentes-contenedor-otro-diseno-derecha {
+        grid-column: 7 / -1;
+    }
+}
+
+@media (max-width: 750px) {
+    .navbar-enlaces {
+        display: none;
+    }
+
+    .logo {
+        width: 50%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .logo img{
+        width: 60%;
+    }
+
+    .logo button {
+        display: block;
+    }
+
+    .navbar-otros {
+        width: 50%;
+
+    }
+
+    .navbar-otros-input {
+        width: 20%;
+        text-align: center;
+    }
+
+    .navbar-otros-input i {
+        font-size: 1.5rem;
+    }
+
+    .navbar-otros-input input{
+        display: none;
+    }
+
+    .navbar-otros button {
+        width: 50%;
+    }
+
+    .inicio-descargar-opciones-contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+
+   .android-studio-componentes-contenedor-componente-derecha{
+        display: none;
+    }
+
+    .android-studio-componentes-contenedor-componente-izquierda{
+        grid-column: 1 / -1;
+    }
+
+    .android-studio-componentes-contenedor-otro-diseno-izquierda {
+        grid-column: 1 / -1;
+    }
+
+    .android-studio-componentes-contenedor-otro-diseno-derecha {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 560px){
+    .navbar-otros button {
+        display: none;
+    }
+
+    .inicio-descargar-opciones-contenedor {
+        background-color: red;
+    }
+
+    .inicio-descargar-opciones {
+        border: 2px solid #133A4B;
+        margin: 10px 60px;
+        padding: 15px;
+    }
+    
+}
